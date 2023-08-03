@@ -1,0 +1,140 @@
+body {
+    max-width: 100%;
+    padding: auto;
+    margin: auto;
+}
+
+header {
+    padding: 10px 16px;
+    z-index: 1;
+    background-color: white;
+}
+
+.content {padding: 16px;}
+
+.container-md{--bs-gutter-x: 10px;}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {padding-top: 120px;}
+
+p, span, a {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+
+a {color: var(--bs-black);}
+
+.card-title {font-size: 16px;}
+.card-subtitle {font-size: 14px;}
+.card-text {font-size: 13px;}
+.non-active:hover {background-color: #f8f9fa;}
+
+.grid {
+    display: grid;
+    grid-template: repeat(3, 32%) / repeat(3, 32%);
+    column-gap: 20px;
+    row-gap: 10px;
+    margin-top: 20px;
+
+}
+
+footer {background-color: #262626;}
+
+.f-grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template: 20% 20% / 45% 45%;
+        justify-content: space-between;
+        column-gap: 20px;
+    }
+    .btnDown {
+        max-width: 176px;
+    }
+}
+
+@media (max-width: 340px) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .f-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .info {
+        flex-direction: column;
+    }
+    .textfooter {
+        padding: 10px 0 10px 0;
+    }
+}
+
+.about {
+    display: flex;
+    flex-direction: column; 
+}
+.about > a {
+    padding-bottom: 20px;
+    color: white;
+}
+.textfooter {
+    font-size: 11px;
+    color: white;
+}
+a:hover {color: #49A144;}
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #59BD5A; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 30px; /* Increase font size */
+    height: 80px;
+    width: 80px;
+    margin: auto;
+    padding: auto;
+}
+
+#myBtn:hover {
+    background-color: #75bf75; /* Add a dark-grey background on hover */
+    transition: 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+#dropdownMenuButton2 {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #3B3B3B;
+    width: 90%;
+}
+
+
+.color {color: #49A144;}
+
+.fContainer {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.info {
+    display: flex;
+    justify-content: space-around;
+}
